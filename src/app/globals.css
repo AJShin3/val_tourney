@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-champs-black: #171717;
+  --color-champs-white: #ffffff;
+  --color-champs-gold: #ffd700;
 }
 
 @theme inline {
