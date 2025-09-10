@@ -9,3 +9,9 @@ export type player = {
   country: string;
   matches: match[];
 };
+
+export type team = {
+  name: string;
+  players: player;
+  region: string;
+};
