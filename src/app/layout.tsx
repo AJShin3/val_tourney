@@ -1,19 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Rajdhani } from "next/font/google";
+import { Inter_Font } from "./fonts";
 import "./globals.css";
-import "./fonts.ts";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
-
-const rajdhani = Rajdhani({
-  variable: "--font-rajdhani",
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,9 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${rajdhani.variable} antialiased`}>
-        {children}
-      </body>
+      <body className={`${Inter_Font.variable} antialiased`}>{children}</body>
     </html>
   );
 }
