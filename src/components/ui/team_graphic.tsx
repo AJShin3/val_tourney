@@ -1,3 +1,4 @@
+"use client";
 import { team } from "@/types";
 import Image from "next/image";
 import TeamName from "./team_name";
@@ -5,9 +6,13 @@ import { AvatarCircles } from "../magicui/avatar-circles";
 
 type TeamGraphicProps = {
   team: team;
+  handleAvatarClick: (player: string) => void;
 };
 
-export default function TeamGraphic({ team }: TeamGraphicProps) {
+export default function TeamGraphic({
+  team,
+  handleAvatarClick,
+}: TeamGraphicProps) {
   const avatars = team.players
     .filter((player) => player)
     .map((player) => ({
@@ -26,7 +31,11 @@ export default function TeamGraphic({ team }: TeamGraphicProps) {
       />
       <TeamName team={team} />
       <div className="absolute right-42 bottom-4 sm:right-94 md:right-48 md:bottom-auto">
-        <AvatarCircles numPeople={0} avatarUrls={avatars} />
+        <AvatarCircles
+          numPeople={0}
+          avatarUrls={avatars}
+          onClick={handleAvatarClick}
+        />
       </div>
     </div>
   );

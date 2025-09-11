@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { ArrowUpRightIcon } from "@phosphor-icons/react";
 
 interface Avatar {
   imageUrl: string;
@@ -11,11 +12,13 @@ interface AvatarCirclesProps {
   className?: string;
   numPeople?: number;
   avatarUrls: Avatar[];
+  onClick?: (player: string) => void;
 }
 
 export const AvatarCircles = ({
   className,
   avatarUrls,
+  onClick,
 }: AvatarCirclesProps) => {
   return (
     <div
@@ -27,9 +30,10 @@ export const AvatarCircles = ({
       {avatarUrls.map((url, index) => (
         <button
           key={index}
-          onClick={() => {
-            console.log(`Avatar ${index + 1} clicked`);
-          }}
+          onClick={
+            onClick ? () => onClick(avatarUrls[index].profileUrl) : undefined
+          }
+          className="group relative hover:cursor-pointer"
         >
           <Image
             key={index}
@@ -39,6 +43,13 @@ export const AvatarCircles = ({
             height={40}
             alt={`Avatar ${index + 1}`}
           />
+          <div
+            className={cn(
+              "group-hover:flex hidden text-white border border-val-white rounded-md py-1 px-2 text-xs absolute -top-10 left-0"
+            )}
+          >
+            <p>{avatarUrls[index].profileUrl}</p>
+          </div>
         </button>
       ))}
     </div>
