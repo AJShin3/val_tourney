@@ -18,11 +18,11 @@ export default function PlayerStat(playerProps: PlayerStatProps) {
     <div className="fixed inset-0 max-w-5xl mx-auto p-4 z-50 flex justify-center text-white text-3xl font-bold bg-gradient-to-b from-val-black/92 via-val-black/97 to-val-black">
       <button
         onClick={playerProps.handleAvatarClose}
-        className="hover:cursor-pointer flex items-center justify-center h-10 w-10 absolute top-4 left-4 text-val-white hover:text-val-white/50 rounded-full border border-white hover:border-val-white/50 transition duration-150"
+        className="hover:cursor-pointer flex items-center justify-center h-10 w-10 absolute top-6 left-6 text-val-white hover:text-val-white/50 rounded-full border border-white hover:border-val-white/50 transition duration-150"
       >
         <ArrowLeftIcon size={16} weight="bold" />
       </button>
-      <div className="w-full h-fit p-4 md:p-20 mt-20">
+      <div className="w-full h-fit p-4 md:p-20 mt-20 border border-val-white">
         {playerData && teamInfo && (
           <div className="">
             <Image
@@ -32,6 +32,7 @@ export default function PlayerStat(playerProps: PlayerStatProps) {
               alt={`${playerData.ign} avatar`}
               width={100}
               height={100}
+              className="rounded-full border border-white place-self-end"
             />
           </div>
         )}

@@ -822,7 +822,7 @@ export const team_data: team[] = [
   {
     name: "Paper Rex",
     short_name: "prx",
-    region: "Pacific",
+    region: "APAC",
     players: ["d4v41", "f0rsaken", "jinggg", "patmen", "something"],
     timeOfMatch: new Date("2025-09-12T13:00:00Z"),
     opponent: "xlg",
@@ -832,7 +832,7 @@ export const team_data: team[] = [
   {
     name: "Sentinels",
     short_name: "sen",
-    region: "Americas",
+    region: "NA",
     players: ["bang", "johnqt", "n4rrate", "zekken", "zellsis"],
     timeOfMatch: new Date("2025-09-12T16:00:00Z"),
     opponent: "gx",
@@ -842,7 +842,7 @@ export const team_data: team[] = [
   {
     name: "NRG",
     short_name: "nrg",
-    region: "Americas",
+    region: "NA",
     players: ["Brawk", "Ethan", "Mada", "s0m", "skuba"],
     timeOfMatch: new Date("2025-09-13T13:00:00Z"),
     opponent: "edg",
@@ -852,7 +852,7 @@ export const team_data: team[] = [
   {
     name: "Team Liquid",
     short_name: "tl",
-    region: "emea",
+    region: "EMEA",
     players: ["kamo", "keiko", "nAts", "paTiTek", "trexx"],
     timeOfMatch: new Date("2025-09-13T16:00:00Z"),
     opponent: "drx",
@@ -862,7 +862,7 @@ export const team_data: team[] = [
   {
     name: "DRG",
     short_name: "drg",
-    region: "China",
+    region: "CHINA",
     players: ["akeman", "flex1n", "nicc", "spiritz1", "vo0kashu"],
     timeOfMatch: new Date("2025-09-14T13:00:00Z"),
     opponent: "t1",
@@ -872,7 +872,7 @@ export const team_data: team[] = [
   {
     name: "G2 Esports",
     short_name: "g2",
-    region: "Americas",
+    region: "NA",
     players: ["Jawgemo", "JonahP", "Leaf", "Trent", "Valyn"],
     timeOfMatch: new Date("2025-09-14T16:00:00Z"),
     opponent: "th",
@@ -882,7 +882,7 @@ export const team_data: team[] = [
   {
     name: "Bilibili Gaming",
     short_name: "blg",
-    region: "China",
+    region: "CHINA",
     players: ["knight", "levius", "nephh", "rushia", "whzy"],
     timeOfMatch: new Date("2025-09-15T13:00:00Z"),
     opponent: "mibr",
@@ -892,7 +892,7 @@ export const team_data: team[] = [
   {
     name: "Rex Regum Qeon",
     short_name: "rrq",
-    region: "Pacific",
+    region: "APAC",
     players: ["crazyguy", "jemkin", "kushy", "monyet", "xffero"],
     timeOfMatch: new Date("2025-09-16T16:00:00Z"),
     opponent: "fnc",
