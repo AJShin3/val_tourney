@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { team } from "@/types";
 import { Rajdhani_Font } from "@/app/fonts";
+import { ArrowUpRightIcon } from "@phosphor-icons/react";
 
 type TeamGraphicProps = {
   team: team;
@@ -10,7 +11,6 @@ type TeamGraphicProps = {
 export default function TeamName({ team }: TeamGraphicProps) {
   const [timeLeft, setTimeLeft] = useState<string>("");
 
-  // --- Countdown logic ---
   useEffect(() => {
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -56,6 +56,9 @@ export default function TeamName({ team }: TeamGraphicProps) {
       >
         {team.name}
       </h2>
+      <button style={{ color: team.color }}>
+        <ArrowUpRightIcon />
+      </button>
     </div>
   );
 }

@@ -37,6 +37,9 @@ export default function TeamGraphic({
           onClick={handleAvatarClick}
         />
       </div>
+      <div className="absolute right-16 sm:right-32 md:right-16 text-xl sm:text-3xl md:text-6xl font-bold md:bottom-auto text-white">
+        <h3>#{team.rank}</h3>
+      </div>
     </div>
   );
 }
