@@ -11,5 +11,5 @@ export const Inter_Font = Inter({
 export const Rajdhani_Font = Rajdhani({
   variable: "--font-rajdhani",
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "500", "600", "700"],
 });

@@ -1,5 +1,4 @@
 import { player } from "./types";
-import { match } from "./types";
 import { team } from "./types";
 
 export const players: player[] = [
@@ -888,7 +887,7 @@ export const team_data: team[] = [
   {
     name: "TH",
     region: "EMEA",
-    players: ["ara", "cloud", "flickless", "grubinho", "westside"],
+    players: ["Boo", "Miniboo", "Wo0t", "RieNs", "benjyfishy"],
   },
   {
     name: "TL",
