@@ -21,8 +21,8 @@ export default function SiteHeader() {
       <p className="text-val-white/70 text-sm">
         if you have any requests or something looks broken, feel free to reach
         out to us on x/twitter. (or for the more technically inclined, make a pr
-        on our github (). and yes, all data is stored in local. there isnt that
-        much and it makes it incredibly fast).
+        on our github ({`-->`}). and yes, all data is stored in local. there
+        isnt that much and it makes it incredibly fast).
       </p>
       <div className="flex flex-row justify-between mt-3 items-center">
         <p className="text-val-white font-bold text-2xl">enjoy the stats.</p>
