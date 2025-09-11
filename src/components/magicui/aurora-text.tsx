@@ -9,6 +9,7 @@ interface AuroraTextProps {
   speed?: number;
 }
 
+//ye
 export const AuroraText = memo(
   ({
     children,
