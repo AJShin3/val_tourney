@@ -6,12 +6,16 @@ export type match = {
 export type player = {
   ign: string;
   team: string;
-  country: string;
-  matches: match[];
+  role: string;
+  acs: number;
+  kd: number;
+  cl: string;
+  adr: number;
+  fk: number;
 };
 
 export type team = {
   name: string;
-  players: player;
+  players: string[];
   region: string;
 };
