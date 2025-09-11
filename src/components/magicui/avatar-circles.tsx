@@ -2,7 +2,6 @@
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { ArrowUpRightIcon } from "@phosphor-icons/react";
 
 interface Avatar {
   imageUrl: string;
