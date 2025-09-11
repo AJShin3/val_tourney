@@ -9,7 +9,7 @@ interface PeopleProps {
 
 export default function People({ title, link, link2 }: PeopleProps) {
   return (
-    <div className="text-val-white/70 justify-end text-sm text-right flex flex-row items-center leading-5">
+    <div className="text-val-white/70 md:justify-end text-sm text-right flex flex-row items-center leading-5">
       <p className="mr-4">{title}</p>
       <Link href={`${link2}`} className={`${link2 ? "" : "hidden"}`}>
         <GithubLogoIcon />

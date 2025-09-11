@@ -1,0 +1,31 @@
+import { team } from "@/types";
+import Image from "next/image";
+import TeamName from "./team_name";
+import { AvatarCircles } from "../magicui/avatar-circles";
+
+type TeamGraphicProps = {
+  team: team;
+};
+
+export default function TeamGraphic({ team }: TeamGraphicProps) {
+  const avatars = team.players
+    .filter((player) => player)
+    .map((player) => ({
+      imageUrl: `/avatars/${team.short_name}/${player}.png`,
+      profileUrl: player,
+    }));
+
+  return (
+    <div className="flex flex-row items-center relative w-full h-32 md:h-48 border-white border overflow-hidden">
+      <Image
+        src={`/team_logos/${team.short_name.toLowerCase()}.png`}
+        height={48}
+        width={48}
+        alt={`${team.name} logo`}
+        className="absolute -left-10 -top5 object-contain w-32 md:w-38 h-32 md:h-48"
+      />
+      <TeamName team={team} />
+      <AvatarCircles numPeople={0} avatarUrls={avatars} />
+    </div>
+  );
+}
