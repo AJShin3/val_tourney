@@ -860,7 +860,7 @@ export const team_data: team[] = [
     color: "#EEEEEE",
   },
   {
-    name: "Dragon Ranger Gaming",
+    name: "DRG",
     short_name: "drg",
     region: "China",
     players: ["akeman", "flex1n", "nicc", "spiritz1", "vo0kashu"],

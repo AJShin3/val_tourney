@@ -22,10 +22,12 @@ export default function TeamGraphic({ team }: TeamGraphicProps) {
         height={48}
         width={48}
         alt={`${team.name} logo`}
-        className="absolute -left-10 -top5 object-contain w-32 md:w-38 h-32 md:h-48"
+        className="absolute -left-12 md:-left-12 -top5 object-contain w-32 md:w-38 h-32 md:h-48"
       />
       <TeamName team={team} />
-      <AvatarCircles numPeople={0} avatarUrls={avatars} />
+      <div className="absolute right-42 bottom-4 sm:right-94 md:right-48 md:bottom-auto">
+        <AvatarCircles numPeople={0} avatarUrls={avatars} />
+      </div>
     </div>
   );
 }
