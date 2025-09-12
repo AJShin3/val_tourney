@@ -9,6 +9,7 @@ type PlayerStatProps = {
   handleAvatarClose: () => void;
 };
 
+// one
 export default function PlayerStat(playerProps: PlayerStatProps) {
   const playerData = players.find(
     (p) => p.ign.toLowerCase() === playerProps.currPlayer.toLowerCase()
