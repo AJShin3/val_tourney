@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import People from "@/components/ui/people";
 
 export default function LegalAndCreds() {
