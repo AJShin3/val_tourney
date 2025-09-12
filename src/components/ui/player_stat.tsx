@@ -9,12 +9,11 @@ type PlayerStatProps = {
 };
 
 export default function PlayerStat(playerProps: PlayerStatProps) {
-  const playerData = players.find((p) => p.ign === playerProps.currPlayer);
-
-  const teamInfo = team_data.find(
-    (t) => t.name.toLowerCase() === playerData?.team.toLowerCase()
+  const playerData = players.find(
+    (p) => p.ign.toLowerCase() === playerProps.currPlayer.toLowerCase()
   );
 
+  const teamInfo = team_data.find((t) => t.name === playerData?.team);
   return (
     <div className="fixed inset-0 max-w-5xl mx-auto p-4 z-50 flex justify-center text-white text-3xl font-bold bg-gradient-to-b from-val-black/92 via-val-black/97 to-val-black">
       <button
@@ -34,9 +33,7 @@ export default function PlayerStat(playerProps: PlayerStatProps) {
               className="z-10 opacity-40 h-40 w-40 md:h-64 md:w-64"
             />
             <Image
-              src={`/avatars/${teamInfo.short_name.toLowerCase()}/${
-                playerData.ign
-              }.png`}
+              src={`/avatars/${teamInfo.short_name.toLowerCase()}/${playerData.ign.toLowerCase()}.png`}
               alt={`${playerData.ign} avatar`}
               width={250}
               height={250}

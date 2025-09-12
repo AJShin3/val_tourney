@@ -14,9 +14,8 @@ export default function SiteHeader() {
         this website is a fan made project by a few members of the Valorant
         community. the goal was to provide a more interesting and interactive
         “pre-tournament” champs graphic than the one offs commonly seen on
-        X/Twitter. all team name are clickable and will provide a number of team
-        stats. additionally, all player images are clickable and summarize a
-        players stats from the 2025 Franchise Season.
+        X/Twitter. all player images are clickable and summarize a players stats
+        from the 2025 Franchise Season.
       </p>
       <p className="text-val-white/70 text-sm">
         if you have any requests or something looks broken, feel free to reach
