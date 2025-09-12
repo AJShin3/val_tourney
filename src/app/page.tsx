@@ -130,12 +130,12 @@ export default function Home() {
           <button
             className={`${
               sortBy === "time"
-                ? "text-val-white min-w-fit w-30"
-                : "text-val-white/70 w-30"
+                ? "text-val-white min-w-fit"
+                : "text-val-white/70"
             }`}
             onClick={() => setSortBy("time")}
           >
-            time to match
+            matchtime
           </button>
           <button
             className={` ${
