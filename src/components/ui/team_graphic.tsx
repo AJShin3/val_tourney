@@ -16,7 +16,7 @@ export default function TeamGraphic({
   const avatars = team.players
     .filter((player) => player)
     .map((player) => ({
-      imageUrl: `/avatars/${team.short_name}/${player}.png`,
+      imageUrl: `/avatars/${team.short_name}/${player.toLowerCase()}.png`,
       profileUrl: player,
     }));
 
