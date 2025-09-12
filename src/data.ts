@@ -157,7 +157,7 @@ export const players: player[] = [
 
   {
     ign: "Jieni7",
-    team: "EDward Gaming",
+    team: "Edward Gaming",
     role: "Duelist",
     acs: 196,
     kd: 0.94,
@@ -167,7 +167,7 @@ export const players: player[] = [
   },
   {
     ign: "CHICHOO",
-    team: "EDward Gaming",
+    team: "Edward Gaming",
     role: "Sentinel",
     acs: 206,
     kd: 1.11,
@@ -177,7 +177,7 @@ export const players: player[] = [
   },
   {
     ign: "Smoggy",
-    team: "EDward Gaming",
+    team: "Edward Gaming",
     role: "Smokes",
     acs: 199,
     kd: 1.06,
@@ -187,7 +187,7 @@ export const players: player[] = [
   },
   {
     ign: "ZmjjKK",
-    team: "EDward Gaming",
+    team: "Edward Gaming",
     role: "Duelist",
     acs: 250,
     kd: 1.15,
@@ -197,7 +197,7 @@ export const players: player[] = [
   },
   {
     ign: "nobody",
-    team: "EDward Gaming",
+    team: "Edward Gaming",
     role: "Dart",
     acs: 194,
     kd: 1.01,
@@ -923,7 +923,7 @@ export const team_data: team[] = [
     name: "Edward Gaming",
     short_name: "edg",
     region: "CHINA",
-    players: ["chichoo", "jieni7", "nobody", "smoggy", "zmjkk"],
+    players: ["chichoo", "jieni7", "nobody", "smoggy", "zmjjkk"],
     timeOfMatch: new Date("2025-09-13T13:00:00Z"),
     opponent: "nrg",
     rank: "12",
@@ -968,5 +968,15 @@ export const team_data: team[] = [
     opponent: "blg",
     rank: "16",
     color: "#FFFFFF",
+  },
+  {
+    name: "FNATIC",
+    short_name: "fnc",
+    region: "Emea",
+    players: ["alfajer", "boaster", "chronicle", "crashies", "kaajak"],
+    timeOfMatch: new Date("2025-09-16T16:00:00Z"),
+    opponent: "rrq",
+    rank: "6",
+    color: "#FF5900",
   },
 ];

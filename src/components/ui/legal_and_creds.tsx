@@ -24,13 +24,7 @@ export default function LegalAndCreds() {
       </div>
       <div className="flex flex-col gap-y-2 text-val-white text-xs mt-12 mb-1">
         <div className="flex flex-row mb-1">
-          <p>made with {`<3`} by members of</p>{" "}
-          <Link
-            className="underline ml-1"
-            href={"https://www.mbxtechnologies.com"}
-          >
-            MBX Technologies
-          </Link>
+          <p>made with {`<3`} by members of val community</p>{" "}
         </div>
       </div>
       <People

@@ -7,6 +7,7 @@ import PlayerStat from "@/components/ui/player_stat";
 import { useState } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { XCircleIcon } from "@phosphor-icons/react";
 import { InfoIcon } from "@phosphor-icons/react";
 type SortOption = "name" | "time" | "rank";
 
@@ -15,6 +16,7 @@ export default function Home() {
   const handleAvatarClick = (player: string) => {
     setCurrPlayer(player);
   };
+  const [modalOpen, setModalOpen] = useState(true);
 
   const handleAvatarClose = () => {
     setCurrPlayer(null);
@@ -157,6 +159,25 @@ export default function Home() {
           currPlayer={currPlayer}
           handleAvatarClose={handleAvatarClose}
         />
+      )}
+      {modalOpen && (
+        <div className="absolute md:top-3 flex flex-row ml-3 md:ml-0 md:right-3 text-white bg-val-black border border-white max-w-xs p-4 pl-9 text-sm rounded-md">
+          <button
+            className="absolute top-2 left-2"
+            onClick={() => setModalOpen(false)}
+          >
+            <XCircleIcon
+              size={20}
+              className="text-val-white/50 hover:text-val-white"
+            />
+          </button>
+          <p className="text-xs">
+            if you are one of the VCT teams who`s IP we used here in the form of
+            logos, team names, player names, etc and would like something taken
+            down, please reach out to me on Twitter and I will take it down
+            immediately. (look below for contact)
+          </p>
+        </div>
       )}
     </div>
   );

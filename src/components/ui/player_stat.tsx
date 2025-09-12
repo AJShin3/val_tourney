@@ -2,6 +2,7 @@ import { ArrowLeftIcon } from "@phosphor-icons/react";
 import { players, team_data } from "@/data";
 import Image from "next/image";
 import { Rajdhani_Font } from "@/app/fonts";
+import PlayerOneStat from "./player_one_stat";
 
 type PlayerStatProps = {
   currPlayer: string;
@@ -12,7 +13,7 @@ export default function PlayerStat(playerProps: PlayerStatProps) {
   const playerData = players.find(
     (p) => p.ign.toLowerCase() === playerProps.currPlayer.toLowerCase()
   );
-
+  console.log(playerData?.team);
   const teamInfo = team_data.find((t) => t.name === playerData?.team);
   return (
     <div className="fixed inset-0 max-w-5xl mx-auto p-4 z-50 flex justify-center text-white text-3xl font-bold bg-gradient-to-b from-val-black/92 via-val-black/97 to-val-black">
@@ -49,6 +50,32 @@ export default function PlayerStat(playerProps: PlayerStatProps) {
             </div>
           </div>
         )}
+        <div className="grid gap-y-5 grid-cols-1 md:grid-cols-2 mt-10 md:mt-20 mb-20">
+          <PlayerOneStat
+            stat_name="acs"
+            player_name={playerData?.ign}
+            stat_value={playerData?.acs}
+            visible_stat_name="ACS"
+          />
+          <PlayerOneStat
+            stat_name="kd"
+            player_name={playerData?.ign}
+            stat_value={playerData?.kd}
+            visible_stat_name="Kill/Death Ratio"
+          />
+          <PlayerOneStat
+            stat_name="fk"
+            player_name={playerData?.ign}
+            stat_value={playerData?.fk}
+            visible_stat_name="First Blood %"
+          />
+          <PlayerOneStat
+            stat_name="cl"
+            player_name={playerData?.ign}
+            stat_value={playerData?.cl}
+            visible_stat_name="Clutch %"
+          />
+        </div>
       </div>
     </div>
   );

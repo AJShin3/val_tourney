@@ -15,13 +15,30 @@ export default function SiteHeader() {
         community. the goal was to provide a more interesting and interactive
         “pre-tournament” champs graphic than the one offs commonly seen on
         X/Twitter. all player images are clickable and summarize a players stats
-        from the 2025 Franchise Season.
+        from the 2025 Franchise Season. additionally, team rankings are from
+        platchat, who you can find on twitter/x{" "}
+        <a
+          href="https://x.com/PlatChatPodcast"
+          className="underline"
+          target="_blank"
+        >
+          here
+        </a>
+        . stats are only from the 2025 franchise season and do not include EWC
+        or years prior.
       </p>
       <p className="text-val-white/70 text-sm">
         if you have any requests or something looks broken, feel free to reach
         out to us on x/twitter. (or for the more technically inclined, make a pr
-        on our github ({`-->`}). and yes, all data is stored in local. there
-        isnt that much and it makes it incredibly fast).
+        on our{" "}
+        <a
+          href="https://github.com/AJShin3/val_tourney"
+          className="underline"
+          target="_blank"
+        >
+          github
+        </a>
+        .
       </p>
       <div className="flex flex-row justify-between mt-3 items-center">
         <p className="text-val-white font-bold text-2xl">enjoy the stats.</p>
