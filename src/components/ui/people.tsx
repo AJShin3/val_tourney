@@ -6,7 +6,7 @@ interface PeopleProps {
   link?: string;
   link2?: string;
 }
-
+//comment for fun
 export default function People({ title, link, link2 }: PeopleProps) {
   return (
     <div className="text-val-white/70 md:justify-end text-sm text-right flex flex-row items-center leading-5">
