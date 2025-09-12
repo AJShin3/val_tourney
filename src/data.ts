@@ -55,7 +55,7 @@ export const players: player[] = [
 
   {
     ign: "vo0kashu",
-    team: "Dragon Ranger Gaming",
+    team: "DRG",
     role: "Sentinel",
     acs: 221,
     kd: 1.19,
@@ -65,7 +65,7 @@ export const players: player[] = [
   },
   {
     ign: "SpiritZ1",
-    team: "Dragon Ranger Gaming",
+    team: "DRG",
     role: "Duelist",
     acs: 211,
     kd: 0.98,
@@ -75,7 +75,7 @@ export const players: player[] = [
   },
   {
     ign: "Flex1n",
-    team: "Dragon Ranger Gaming",
+    team: "DRG",
     role: "Smokes",
     acs: 200,
     kd: 1.04,
@@ -85,7 +85,7 @@ export const players: player[] = [
   },
   {
     ign: "Akeman",
-    team: "Dragon Ranger Gaming",
+    team: "DRG",
     role: "Duelist",
     acs: 197,
     kd: 0.86,
@@ -95,7 +95,7 @@ export const players: player[] = [
   },
   {
     ign: "Nicc",
-    team: "Dragon Ranger Gaming",
+    team: "DRG",
     role: "Flex",
     acs: 189,
     kd: 0.92,
