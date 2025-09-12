@@ -24,8 +24,8 @@ export default function TeamGraphic({
     <div className="flex flex-row items-center relative w-full h-32 md:h-48 border-white border overflow-hidden">
       <Image
         src={`/team_logos/${team.short_name.toLowerCase()}.png`}
-        height={48}
-        width={48}
+        height={512}
+        width={512}
         alt={`${team.name} logo`}
         className="absolute -left-12 md:-left-12 -top5 object-contain w-32 md:w-38 h-32 md:h-48"
       />
