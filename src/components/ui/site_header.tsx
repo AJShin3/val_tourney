@@ -38,7 +38,7 @@ export default function SiteHeader() {
         >
           github
         </a>
-        .
+        ).
       </p>
       <div className="flex flex-row justify-between mt-3 items-center">
         <p className="text-val-white font-bold text-2xl">enjoy the stats.</p>
